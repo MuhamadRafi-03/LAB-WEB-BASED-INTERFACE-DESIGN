@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+    
+    <header>
+        <!-- FIX 1: Moved  <h1> inside the <header> tags for proper semantic structure -->
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+    
+    <nav>
+        <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+    </nav>
+    
+    <section id="results">
+        <h2>Feedback Summary</h2>
+		               
+        <table >
+		 <!-- FIX : Remove border =1;  -->
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <!-- FIX 2: Change <td> to <th> because "Rating" is  table header -->
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <!-- FIX 3: Changed colspan="3" to colspan="2". The table has 3 columns total. Since "Week" takes 1 column, merging the remaining columns only requires spanning 2 columns  -->
+                <td colspan="2">Tables and Forms</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <!-- FIX 4: Added the missing </td> closing tag after "Semantic HTML" -->
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            
+            <!-- FIX 5: Changed label for="name" to for="fullname" so it correctly links to the input's id="fullname" -->
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="name"><br>
+            
+            <label>Overall rating:</label><br>
+            <!-- FIX 6: Changed both radio buttons to have the same name="rating". Radio buttons must share the exact same name attribute so that you can only select one at a time. -->
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br>
+            
+            <!-- FIX 7: Changed label for="labs" to for="lab" so it correctly matches the checkbox's id="lab" -->
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <footer>
+        <!-- FIX 8: Removed the space in &copy ; so the copyright symbol renders correctly as &copy; -->
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+    
+</body>
+</html>

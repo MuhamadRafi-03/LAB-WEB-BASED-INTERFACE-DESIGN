@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration</title>
+</head>
+<body>
+  
+  <header>
+    <h1>Hackathon</h1> 
+  </header>
+ 
+  <nav> 
+    <a href="#about">About the Event</a> 
+    <a href="#schedule">Event schedule</a>
+    <a href="#register">Registration</a>
+  </nav>
+  
+  <section id="about">
+    <h2>About the Event</h2>
+    
+    <article>
+      <h3>Hackathon 2026: The Campus Innovation Challenge</h3>
+      <p>is a 48-hour collegiate hackathon designed to transform student talent into functional, real world tech solution</p>
+    </article>
+    
+    <article>
+      <h3>UniHack challenges students from all majors not just computer science to build prototypes that solve immediate problems within the university ecosystem</h3>
+      <p>EdTech & Campus Life: Applications to improve study groups, mental health resources, campus navigation, or student organization management.</p>
+    </article>
+  </section>
+    <section id ="schedule">
+    <h2> Event schedule</h2>
+	
+	<table border ="1">
+	<tr>
+	    
+		<th>Time </th>
+		<th>Activity</th>
+		<th> Venue</th>
+		<th> In Charge Person</th>
+		
+		
+		</tr>
+		
+	<tr>
+	    <td> 08:30AM</td>
+		<td> Registration</td>
+	    <td rowspan="2">Cisco</td>
+		<td> Khairul</td>
+	</tr>
+		
+	<tr>
+		<td>10:00 AM</td >
+		<td> Opening Ceremony</td>
+		<td> comtech student</td>
+		
+	</tr>
+	<tr>
+	         <td>11:00 AM</td>
+             <td> Hackathon introduction </td>
+             <td>MP1</td>
+             <td>Dr.Fattah</td>
+	
+    </tr>
+	
+	<tr>
+	      <td>1:00 PM</td>
+          <td colspan="3">Lunch Break and  Zohor Prayer</td>
+     </tr>   	
+		
+	<tr>
+	      <td>02:00 PM</td>
+          <td>Web Workshop</td>
+          <td>MP1</td>
+          <td>Dr. Islah </td>
+		  </tr>
+   <tr>
+		  <td>06:00 PM</td>
+                <td>Closing Remarks</td>
+                <td>Cisco</td>
+                <td>Comtech students</td>
+  </tr>
+        </table>
+	</section>
+	
+	<section id="register">
+        <h2>Registration</h2>
+		<form action="register.html" method="post">
+            
+            
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName"><br><br>
+
+            <label for="matricNum">Matric Number:</label>
+            <input type="text" id="matricNum" name="matricNum"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+           
+            <p>Year of Study:</p>
+            <input type="radio" id="year1" name="year" value="1">
+            <label for="year1">Year 1</label>
+            <input type="radio" id="year2" name="year" value="2">
+            <label for="year2">Year 2</label>
+            <input type="radio" id="year3" name="year" value="3">
+            <label for="year3">Year 3</label>
+            <input type="radio" id="year4" name="year" value="4">
+            <label for="year4">Year 4</label><br><br>
+
+            
+            <p>Sessions you want to join:</p>
+            <input type="checkbox" id="session1" name="sessions" value="opening">
+            <label for="session1">Opening Ceremony</label><br>
+            <input type="checkbox" id="session2" name="sessions" value="keynote">
+            <label for="session2">Hackathon Introduction </label><br>
+            <input type="checkbox" id="session3" name="sessions" value="workshop">
+            <label for="session3">Web Workshop</label><br><br>
+
+           
+            <label for="faculty">Faculty:</label>
+            <select id="faculty" name="faculty">
+                <option value="cs">FSKM</option>
+                <option value="engineering">FPM</option>
+                <option value="business">FSSM</option>
+                <option value="arts">FEPES</option>
+            </select><br><br>
+
+            
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>Organised by COMTECH FSKM UMT | &copy; 2026</p>
+    </footer>
+		
+	
+	
+	
+</body>
+</html>
