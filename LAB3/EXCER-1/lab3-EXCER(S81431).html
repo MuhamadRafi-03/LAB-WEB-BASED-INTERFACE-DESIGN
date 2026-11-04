@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 3</title>
+</head>
+<body>
+
+
+    <div>
+        <h1>Welcome to My Website <span style="font-size: 0.6em; font-weight: normal;">Connecting you with interactive design</span></h1>
+    </div>
+
+   
+    <div>
+     
+        <h2>Contact Us</h2>
+        <form>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="contact-date">Preferred Contact Date:</label>
+                <input type="date" id="contact-date" name="contact_date">
+            </div>
+            <br>
+            <div>
+                <label for="satisfaction">Satisfaction Level:</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+            </div>
+            <br>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <hr>
+
+    
+        <h2>Inline Calculator</h2>
+        <form oninput="result.value = Number(num1.value) + Number(num2.value)">
+            <input type="number" id="num1" name="num1" value="0"> +
+            <input type="number" id="num2" name="num2" value="0"> =
+            <output name="result" for="num1 num2">0</output>
+        </form>
+    </div>
+
+    <hr>
+
+    <div>
+        <p>&copy; 2026 Lab Exercise 3. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
