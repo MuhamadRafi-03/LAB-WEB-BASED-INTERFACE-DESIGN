@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    
+   <link rel="stylesheet" href="lab4excer1.css">
+
+    
+
+    <style>
+        h1 {
+            text-decoration: underline;
+        }
+        h2 {
+            text-decoration: overline;
+        }
+        h3 {
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <header>
+        <h1>Lab 4 Exercise</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#media-section">Media</a></li>
+            <li><a href="#form-section">Form</a></li>
+        </ul>
+    </nav>
+
+   
+    <main>
+        <section id="section1">
+            <h2>Overview</h2>
+            <article>
+                <h3>Introduction</h3>
+                <p>Welcome to Lab Exercise 4.</p>
+            </article>
+        </section>
+
+        
+        <section id="media-section">
+            <h2>Video Section</h2>
+            <article>
+                <video controls>
+                    <source src="d:\Download chrome\KT Drawbridge.mp4" type="video/mp4">
+                    <track src="captions.vtt" kind="captions" srclang="en" label="English" default>
+                    Your browser does not support the video element.
+                </video>
+                <p>Caption: Sample embedded video.</p>
+            </article>
+        </section>
+
+  
+        <section id="form-section">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </p>
+                <p>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </p>
+                <p>
+                    <label>Favorite Hobbies:</label>
+                    <input type="checkbox" id="coding" name="hobbies" value="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <label for="sports">Sports</label>
+                </p>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Lab 4</p>
+    </footer>
+
+</body>
+</html>

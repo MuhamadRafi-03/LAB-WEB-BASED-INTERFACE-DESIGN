@@ -1,0 +1,56 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #333;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #ddd;
+}
+
+nav ul li a:hover {
+  color: #ff0;
+  text-decoration: underline;
+}
+
+nav ul li a:active {
+  color: #f00;
+}
+
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+form {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
