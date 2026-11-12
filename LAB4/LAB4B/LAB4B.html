@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>e-Café Campus</title>
+    <style>
+    /* FIXED ERROR (Line 7): Replaced HTML comment with a valid CSS comment */
+    /* Navigation bar */
+    ul {
+        /* FIXED ERROR (Line 9): Changed 'no' to 'none' to remove bullets */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* FIXED ERROR (Lines 13-16): Reordered to link ->visited->hover->active */
+    a:link {color: #1A5276;}
+    a:visited {color: #7D3C98;}
+    a:hover {color: #E67E22;}
+    a:active {color: #C0392B;}
+
+    /* FIXED ERROR (Line 17): Changed 'overlined' to 'overline' */
+    h1 {text-decoration: overline;}
+
+    /* FIXED ERROR (Line 18): Added missing colon ':' after 'color' */
+    p {color: #333333; text-align: justify;}
+
+    /* FIXED ERROR (Lines 19-21): Changed '#intro' to '.intro' and added closing '}' */
+    .intro {
+        font-size: 18px;
+        background-color: #FDEBD0;
+    }
+
+    /* FIXED ERROR (Line 22): Added missing '.' before 'highlight' */
+    .highlight {
+        font-weight: bold;
+        color: #C0392B;
+    }
+    </style>
+</head>
+<body>
+<header>
+    <h1>e-Café Campus</h1>
+</header>
+<nav>
+    <ul>
+        <!-- FIXED ERROR (Line 34): Added '#' before 'menu' to link to id="menu" -->
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<section id="menu">
+    <h2>Today's Menu</h2>
+    <p class="intro">Freshly brewed coffee and local delights every day.</p>
+    <!-- FIXED ERROR (Lines 42 & 46): Changed duplicate id="item" to class="item" -->
+    <article class="item">
+        <h3>Kopi Tarik</h3>
+        <p>Only <span class="highlight">RM 3.50</span></p>
+    </article>
+    <article class="item">
+        <h3>Nasi Lemak</h3>
+        <p>Only <span class="highlight">RM 5.00</span></p>
+    </article>
+</section>
+<section id="video">
+    <h2>Watch Our Story</h2>
+    <!-- FIXED ERROR (Line 53): Added 'controls' attribute so the video can be played -->
+    <video width="400" height="300" controls>
+        <!-- FIXED ERROR (Line 54): Changed type="mp4" to valid MIME type="video/mp4" -->
+        <source src="cafe.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+<footer id="contact">
+    <p>© 2026 e-Café Campus</p>
+</footer>
+</body>
+</html>
