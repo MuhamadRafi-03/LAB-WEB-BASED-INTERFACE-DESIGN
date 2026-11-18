@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bookstore</title>
+    
+  
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- ERROR 1 FIXED: Changed rel="stylesheets" to rel="stylesheet" -->
+    <link rel="stylesheet" href="shop.css">
+    
+    <!-- ERROR 2 FIXED: The <style> tag was wrongly placed in the <body>, it belongs in the <head> -->
+    <style>
+        /* ERROR 3 FIXED: Changed color=#1B4F72 to color: #1B4F72 (colon instead of equals) */
+        h1 { text-align: center; color: #1B4F72; }
+    </style>
+</head> 
+<body>
+
+   
+    <header>
+        <h1>Campus Bookstore</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Textbooks, stationery and more for every student.</p>
+        
+        <table id="products">
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th class="price">Price (RM)</th>
+            </tr>
+            <tr>
+                <td>Web Design Basics</td>
+                <td>Textbook</td>
+                <td class="price">45.00</td>
+            </tr>
+            <tr>
+                <td>A4 Notebook</td>
+                <td>Stationery</td>
+                <td class="price">6.50</td>
+            </tr>
+            <tr>
+                <td>USB Drive 32GB</td>
+                <td>Gadget</td>
+                <td class="price">25.00</td>
+            </tr>
+            <tr>
+                <td>Highlighter Set</td>
+                <td>Stationery</td>
+                <td class="price">9.90</td>
+            </tr>
+        </table>
+    </main>
+    
+    <footer>© 2026 Campus Bookstore</footer>
+
+</body>
+</html>

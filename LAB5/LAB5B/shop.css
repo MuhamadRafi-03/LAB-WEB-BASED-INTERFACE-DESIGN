@@ -1,0 +1,120 @@
+body {
+    /* CSS ERROR 1 FIXED: Spelling. 'Robotto' changed to 'Roboto' */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+
+p {
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    /* CSS ERROR 2 FIXED: Missing hyphen. 'no repeat' changed to 'no-repeat' */
+    background-repeat: no-repeat;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    color: white !important;
+    margin: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    /* CSS ERROR 3 FIXED: Changed 'inline' to 'block' so the clickable area fills the space */
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* CSS ERROR 4 FIXED: Invalid syntax. Changed 'li:a:hover' to 'li a:hover' */
+nav li a:hover {
+    background-color: #111;
+}
+
+
+nav li a.active {
+    background-color: #0446aa;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+#products {
+    /* CSS ERROR 5 FIXED: Invalid value. Changed 'collapsed' to 'collapse' */
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* CSS ERROR 6 FIXED: Changed nth-child(2) to nth-child(even) for alternating rows */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+#products tr:hover {
+    background-color: #ddd;
+}
+
+
+#products th {
+    background-color: #0428aa;
+    color: white;
+    text-transform: uppercase; 
+    text-align: center;        
+    padding-top: 12px;         
+    padding-bottom: 12px;      
+}
+
+
+#products th.price, 
+#products td.price {
+    text-align: right;
+}
+
+footer {
+    /* CSS ERROR 8 FIXED: Added missing semicolon (;) at the end of the line */
+    background-color: #f1f1f1; 
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #555;
+}

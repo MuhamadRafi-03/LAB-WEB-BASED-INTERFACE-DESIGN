@@ -1,0 +1,145 @@
+/* General Page & Font Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    background-color: #fafafa;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    border-left: 5px solid #e65100;
+    padding-left: 12px;
+    color: #1B4F72;
+}
+
+/* 1. Header with Background Image */
+header {
+    background-image: url('header-bg.jpg');
+    background-color: #2c1810;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.4rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* 2. Horizontal Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #444444;
+}
+
+nav li a.active {
+    background-color: #e65100;
+}
+
+/* 3. Content Width & Paragraph Formatting */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* 4. Free Entry Notice */
+section p.notice {
+    background-color: #fff3e0;
+    color: #bf360c;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* 5. Styled Table */
+#menu-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+#menu-table th,
+#menu-table td {
+    border: 1px solid #dddddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#menu-table th {
+    background-color: #e65100;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#menu-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#menu-table tr:hover {
+    background-color: #ffe0b2;
+}
+
+#menu-table th.price,
+#menu-table td.price {
+    text-align: right;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #ffe0b2;
+    color: #555555;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #dddddd;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
