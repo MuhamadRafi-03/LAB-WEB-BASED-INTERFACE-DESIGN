@@ -1,0 +1,97 @@
+/* Styling the body background and typography */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Open Sans', sans-serif; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #2b0066;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation bar styling with a distinct color[cite: 4] */
+nav {
+    background-color: #2b0066
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: bold;
+}
+
+/* Hover effects for navigation links */
+nav ul li a:hover {
+    background-color: #2b0066;
+}
+
+/* Main section styling and spacing */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text alignment and spacing for the paragraphs */
+article p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Table styling to enhance its appearance and add borders */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2e0066;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer styling with a subtle background color and centered text */
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    color: #555;
+}
+
+
