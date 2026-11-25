@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <header>
+      <h1>Web Development Quiz</h1>
+      <p>Test your basic knowledge of UMT,HTML, CSS, and JavaScript.</p>
+    </header>
+
+   
+    <section id="quiz-section">
+      <p id="timer">Time Left: 15s</p>
+      <h2 id="question">Question goes here</h2>
+      <div id="options"></div>
+    </section>
+
+  
+    <section id="feedback-section">
+      <p id="feedback"></p>
+    </section>
+
+    
+    <div class="buttons">
+      <button id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+      <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+      <button id="restart-btn" onclick="startQuiz()" style="display: none;">Restart Quiz</button>
+    </div>
+
+    
+    <footer>
+      <p id="score"></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

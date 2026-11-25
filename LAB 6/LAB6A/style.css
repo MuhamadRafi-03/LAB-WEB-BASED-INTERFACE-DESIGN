@@ -1,0 +1,104 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+button {
+    padding: 10px 18px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.choices-display {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #fafafa;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#history th, #history td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#history th {
+    background-color: #007bff;
+    color: white;
+}
+
+/
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+}
